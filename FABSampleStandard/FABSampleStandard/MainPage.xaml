@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FABSampleStandard"
+             xmlns:fab="clr-namespace:FAB.Forms.Standard;assembly=FAB.Forms.Standard"
+             x:Class="FABSampleStandard.MainPage">
+
+    <ContentPage.Content>
+        <RelativeLayout>
+            <ContentView
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+                <ListView
+					x:Name="list"
+					BackgroundColor="White">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell
+								Text="{Binding .}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ContentView>
+            <fab:FloatingActionButton
+				x:Name="fabBtn"
+				Source="plus.png"
+				Size="Normal"
+				Clicked="Handle_FabClicked"
+				NormalColor="Green"
+				RippleColor="Red"
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-75}"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}" />
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -10,9 +10,9 @@ using Android.Views;
 using Widget = Android.Support.Design.Widget;
 using Android.Content.Res;
 using Android.Support.V4.View;
+using FAB.Forms.Standard;
 
-[assembly: ExportRenderer(typeof(FAB.Forms.FloatingActionButton), typeof(FAB.Droid.FloatingActionButtonRenderer))]
-
+[assembly: ExportRenderer(typeof(FAB.Forms.Standard.FloatingActionButton), typeof(FAB.Droid.FloatingActionButtonRenderer))]
 namespace FAB.Droid
 {
     public partial class FloatingActionButtonRenderer : ViewRenderer<FloatingActionButton, Widget.FloatingActionButton>
@@ -116,8 +116,9 @@ namespace FAB.Droid
             try
             {
                 this.Control.SetRippleColor(this.Element.RippleColor.ToAndroid());
+                //this.Control.SetRippleColor(this.Element.RippleColor.ToAndroid());
             }
-            catch (MissingMethodException)
+            catch (Exception)
             {
                 // ignore
             }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FAB.Forms
+namespace FAB.Forms.Standard
 {
         public enum FabSize
         {

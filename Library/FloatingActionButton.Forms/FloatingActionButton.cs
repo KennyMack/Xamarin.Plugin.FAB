@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using System.Windows.Input;
 
-namespace FAB.Forms
+namespace FAB.Forms.Standard
 {
     public class FloatingActionButton : View
     {
@@ -81,7 +81,7 @@ namespace FAB.Forms
             set { this.SetValue(AnimateOnSelectionProperty, value); }
         }
 
-        internal virtual void SendClicked()
+        public virtual void SendClicked()
         {
             var param = this.CommandParameter;
 

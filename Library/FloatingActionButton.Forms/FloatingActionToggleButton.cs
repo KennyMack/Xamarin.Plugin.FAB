@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using System.Windows.Input;
 
-namespace FAB.Forms
+namespace FAB.Forms.Standard
 {
     public class FloatingActionToggleButton : FloatingActionButton
     {
@@ -48,7 +48,7 @@ namespace FAB.Forms
             set { this.SetValue(UnCheckedImageProperty, value); }
         }
 
-        internal override void SendClicked()
+        public override void SendClicked()
         {
             if (Source == UnCheckedImage)
             {

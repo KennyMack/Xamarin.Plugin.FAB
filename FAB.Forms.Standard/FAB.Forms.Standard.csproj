@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Library\FloatingActionButton.Forms\FabSize.cs" Link="FabSize.cs" />
+    <Compile Include="..\Library\FloatingActionButton.Forms\FloatingActionButton.cs" Link="FloatingActionButton.cs" />
+    <Compile Include="..\Library\FloatingActionButton.Forms\FloatingActionToggleButton.cs" Link="FloatingActionToggleButton.cs" />
+    <Compile Include="..\Library\FloatingActionButton.Forms\ImageSourceConverter.cs" Link="ImageSourceConverter.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.1.527436" />
+  </ItemGroup>
+
+</Project>

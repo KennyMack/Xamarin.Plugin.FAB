@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using System.Globalization;
 
-namespace FAB.Forms
+namespace FAB.Forms.Standard
 {
     public class ImageSourceConverter : TypeConverter
     {
